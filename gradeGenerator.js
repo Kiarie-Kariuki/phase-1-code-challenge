@@ -1,3 +1,4 @@
+//define a function that generates grades
 function gradeGenerator (marks) {
     if (marks > 79) {
         return "A";
@@ -15,8 +16,11 @@ function gradeGenerator (marks) {
         return 'E';
     }
 }
+//initiate a function to input marks that will allow generation of grades
 function inputMarks (){
+    //prompt user to input marks
     const marks = prompt("Enter Marks");
+    // check if the values put in for marks are valid
     if(isNaN(marks) || marks <0 || marks > 100){
         console.log("Invalid input. Input marks between 0 and 100.");
     } else {
@@ -24,4 +28,5 @@ function inputMarks (){
         console.log (grade);
     }
 }
+//call the inputMarks function
 inputMarks();
